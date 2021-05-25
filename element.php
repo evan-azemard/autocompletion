@@ -17,7 +17,7 @@
         </form>
     </div>
 </header>
-<main id="main_index">
+<main id="mainmain">
         <table border="1px">
             <thead>
                 <tr>
@@ -32,7 +32,6 @@
             </tr>
             </tbody>
         </table>
-
 </main>
 <footer>
     <p>Copyright 2021 © Evan Azemard, Clément Nahmens Autocomplétion | Tous droits réservés</p>

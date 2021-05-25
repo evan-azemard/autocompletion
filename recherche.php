@@ -17,7 +17,7 @@
         </form>
     </div>
 </header>
-<main id="main_index">
+<main id="mainmain">
     <div id="re_div">
         <span>
             <a href="#">Lien vers la page Natation</a>

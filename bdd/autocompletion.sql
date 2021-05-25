@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 -- Structure de la table `sports`
 --
 
+CREATE DATABASE autocompletion;
 CREATE TABLE `sports` (
   `id` int(11) NOT NULL,
   `nom` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL

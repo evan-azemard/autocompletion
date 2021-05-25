@@ -105,6 +105,18 @@ a:hover{
     color: #448385;
 }
 
+#mainmain{
+    background-image: url("2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 table{
     height: 80%;
     width: 25%;
