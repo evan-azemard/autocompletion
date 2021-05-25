@@ -4,8 +4,15 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("1.png");
+}
 
+#body_index{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("1.png");
 }
 
 header{
@@ -75,4 +82,25 @@ input[type='submit']{
 footer{
     background-color: rgba(205, 177, 8, 0.6);
     text-align: center;
+}
+
+
+#re_div{
+    height: 10vh;
+    width: 40vw;
+    background-color: rgba(95, 158, 160, 0.16);
+    border-left: 6px solid darkcyan;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a{
+    color: darkcyan;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+a:hover{
+    color: #448385;
 }

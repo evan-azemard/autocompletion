@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body id="body_index">
 <header>
     <div id="header_div">
         <h1>Autocomplétion</h1>
