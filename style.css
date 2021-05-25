@@ -104,3 +104,15 @@ a{
 a:hover{
     color: #448385;
 }
+
+table{
+    height: 80%;
+    width: 25%;
+    color: white;
+    background-color: #448385;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+}
