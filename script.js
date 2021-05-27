@@ -3,18 +3,15 @@ const search =  document.getElementById('search')
 search.addEventListener('keyup', function () {
 
     const val = search.value;
+    console.log(val);
 
-        var fromjson = localStorage.getItem("data");
 
-        var i = import("data.json")
+    var i = import("data.json")
+    let  u = JSON.parse(i)
+    console.log(u)
 
-           let  u = JSON.parse(i)
-        console.log(u)
-        var obj = JSON.parse(fromjson);
-
-        console.log(fromjson);
-        console.log(obj);
-        console.log(val);
+    var obj = JSON.parse(localStorage.getItem("data"));
+    console.log(obj);
 
     $.ajax({
         type: "GET",
@@ -22,16 +19,9 @@ search.addEventListener('keyup', function () {
         dataType: "json",
         success: function (data) {
             var res = JSON.parse(data);
-        console.log(res)
-
+            console.log(res)
         }});
-
-    console.log(val)
-    console.log(res)
-
-
-
-
+    console.log(res);
 });
 
 
