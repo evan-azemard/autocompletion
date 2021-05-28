@@ -1,42 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>Page requête</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="fontawesome/all.css">
+	<link rel="stylesheet" type="text/css" href="autocompletion.css">
 </head>
+
 <body>
-<header>
-    <div id="header_div">
-        <h1>Autocomplétion</h1>
-        <form id="header_form" method="get">
-            <input type="search"  id="search" placeholder="Votre recherche:" aria-label="recherche">
-            <input type="submit" value="Rechercher">
-        </form>
-    </div>
-</header>
-<main id="mainmain">
-    <table border="1px">
-        <thead>
-        <tr>
-            <th>id</th>
-            <th>nom</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>5</td>
-            <td>natation</td>
-        </tr>
-        </tbody>
-    </table>
-</main>
-<footer>
-    <p>Copyright 2021 © Evan Azemard, Clément Nahmens Autocomplétion | Tous droits réservés</p>
-</footer>
+
+	<header>
+		<?php include('header.php')?>
+	</header>
+	<main class="elementMain">
+
+		<?php 
+
+			require "config.php";
+
+			if(isset($_GET['id'])){$data = $search->getRequestInfo($_GET['id']);} 			
+
+		?>
+
+		<div id="searchDisplay">
+
+			<?php 
+
+			if(isset($data)){?>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Id</th>
+							<th>Nom</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><?php echo $data['id'] ?></td>
+							<td><?php echo $data['nom'] ?></td>
+						</tr>
+					</tbody>
+				</table>
+			
+			<?php } ?>
+			
+		</div>
+		
+	</main>
+	<footer>
+		
+	</footer>
+				
+
+	<style type="text/css">
+
+	</style>
+	
+	<script type="text/javascript" src="autocompletion.js"></script>
 </body>
 </html>
-<script src="script.js"></script>
